@@ -1,0 +1,31 @@
+/* Custom Styles */
+
+
+/* Add padding to body */
+body {
+    background-color:#d8eff6;
+}
+
+/* Custom background for the footer */
+footer {
+    background-color: #276474;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center the main content text */
+.container h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+/* Style for the button */
+.btn {
+    background-color: #276474;
+}
+
+
+
