@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving CRM</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="blue nav-wrapper">
+            <a href="#" class="brand-logo center">Moving CRM</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a class="modal-trigger" href="#form">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>Welcome to Moving CRM</h1>
+        <p>The Moving CRM is an integrated software solution designed specifically for small businesses in the moving industry. </p>
+        <p>Moving CRM&nbsp; is a software solution designed specifically for the moving, transportation, and storage industries, as well as the logistics associated with these fields. This software offers web-based access to various applications and services through a portal interface or web operating system. It provides tools for managing, tracking, storing, analyzing, and reporting data related to moving, transportation, storage, and logistics services. </p>
+        <p>Moving CRM&nbsp; offers cloud-based solutions, including both downloadable and locally installed software for managing operations in moving, transportation, and storage, and related logistics. The platform also supports a range of application services, such as hosting, management, development, analysis, and maintenance of applications, software, and websites for third-party clients within the moving, transportation, and storage sectors.</p>
+
+
+        <!-- Button Trigger Modal -->
+        <a class="waves-effect waves-light modal-trigger btn" href="#dashbox">Launch Information</a>
+
+
+        <!-- Modal Structure -->
+        <div id="dashbox" class="modal">
+            <div class="modal-content">
+                <h4>Launch Information</h4>
+                <p>🎉 Big News Coming Soon! 🎉</br>
+
+                    We’re excited to announce the upcoming launch of Moving CRM on February 19th, 2025! 🚚📦</br></br>
+                    
+                    After months of innovation and development, we're ready to introduce a cutting-edge solution designed to revolutionize the moving, transportation, and storage industries. Moving CRM will streamline your operations, enhance tracking, and provide powerful reporting tools to make your logistics smarter, faster, and more efficient.</br>
+                    </br></br></br>
+                    Get ready to experience a new way of managing your moving and logistics business! 🚀</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Interested</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Not Interested</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="form" class="modal contactForms" >
+            <h2 style="margin:5%;">Contact Information Form</h2>
+    <form id="contactForm" action="saveData.php" method="POST" style="margin:5%;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="blue fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5>Team Moving CRM</h5>
+                    <p>Thank you for visiting!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (required for Materialize JS) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/formscript.js"></script>
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javaScript/env.js"></script>
+</body>
+</html>
